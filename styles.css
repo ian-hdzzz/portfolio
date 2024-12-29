@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: 'PodiumSharp';
+    src: url('./fonts/podiumsharp.otf') format('truetype'); /* Ruta relativa al archivo */
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --primary-color:#03226a;
+    --secundary-color:#fff;
+    --primary-font: 'PodiumSharp', sans-serif;
+    --secundary-font:  "Roboto", serif;;
+}
+
+body{
+    font-family: var(--secundary-font);
+    background: #000;
+}
+
+.contenedor{
+    background-image: url('./img/ny.jpg');
+    background-size: 100% 130%;
+    background-position: -20% center;
+    width: 100%;
+    height:100vh; 
+}
+.black{
+    position: relative;
+    width: 100% ;
+    height: 90%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .9) 100%);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    color: var(--secundary-color);
+}
+.nav > ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+}
+.nav > ul > li{
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: auto;
+  
+}
+.social-media i, a{
+    text-decoration: none;
+    color: var(--secundary-color);
+    font-size: 18px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+.social-media i{
+    font-size: 25px;
+    color: var(--secundary-color);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--secundary-color);
+    font-size: 45px;
+}
+.main h1{
+    position: absolute;
+    padding-top: 460px;
+    z-index: 999;
+    
+}
+
+.main p{
+    position: absolute;
+    padding-top: 610px;
+    z-index: 999;
+}
