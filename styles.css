@@ -41,7 +41,7 @@ body{
 .black{
     position: relative;
     width: 100% ;
-    height: 86.7%;
+    height: 90vh;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .9) 100%);
     z-index: 1;
 }
@@ -252,6 +252,7 @@ body{
 .target .info{
     width: auto;
     margin: 80px 10px;
+   
 }
 .target a{
     text-transform: uppercase;
@@ -269,16 +270,18 @@ body{
 
 }
 .target .info a {
-    margin-bottom: 20px;
+    position: relative;
+    bottom: -50px;
+    right: -200px;
     transition: all ease .6s;
     background: #35b4f4;
     color: #fff;
     padding: 15px;
     margin: 20px;
-    border-radius: 15px;
+    border-radius: 12px;
 }
 .target .info a:hover {
-    font-size: 1.04em;
+   padding: 15.3px;
 }
 .section-3{
     margin: -50px 0;
@@ -378,8 +381,11 @@ footer span {
     display: none;
    }
    .main{
-    font-size: 30px;
+    font-size: 3vw; 
     padding: 20px;
+   }
+   .black{
+    min-height: 82vh;
    }
    .section-2{
     margin: 40% 0;
@@ -410,8 +416,9 @@ footer span {
     text-align: justify;
    }
    .target .info a {
-    position: relative;
-    bottom: 10px; 
+
+    top: 0;
+    right: 0;
    }
    
    .section-3{
