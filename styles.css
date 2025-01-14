@@ -231,7 +231,7 @@ body{
     padding: 20px;
     width: 70%;
     height: auto;
-    background: #161616;
+    background: #0D0D0D;
     border-radius: 20px; /* Hace el div circular */
     box-shadow: 0 0 30px rgba(32, 32, 32, 0.5); /* Brillo exterior */
     display: flex;
@@ -272,14 +272,33 @@ body{
     color: #35b4f4;
     font-size: 1.04em;
 }
+.section-3{
+    margin: -50px 0;
+    width: 100vw;
+    height: auto;
+    background: #000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.quote{
+    margin: 0 50px 0 0;
+    padding: 0;
+    width: 40%;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Roboto", serif;
+    font-weight: 200;
+}
 .form-container{
+    margin: 0 0 0 180px;
     width: 25%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+
 }
 
 .form-container h2{
@@ -288,7 +307,6 @@ body{
 }
 .form-container form{
     width: 100%;
-    margin: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -307,9 +325,12 @@ body{
 
 .form-group textarea{
     width: 100%;
+    min-height: 120px;
     margin: 5px;
     padding: 20px;
     border-radius: 15px;
+    resize: vertical; 
+    overflow: auto; 
 }
 .form-container button{
     width: 100%;
@@ -328,4 +349,18 @@ body{
     background: #0094de;
     width: 101%;
     transform: translateY(-4px);
+}
+
+footer{
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    color: #fff;
+    font-size: 12px;
+    padding: 0 0 40px 40px;
+
+}
+
+footer span {
+    color: #c5c4c4;
+    font-size: 14px;
 }

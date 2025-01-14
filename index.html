@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
     <script src="https://kit.fontawesome.com/596025b920.js" crossorigin="anonymous"></script>
     <title>Ian Hdz | Portfolio</title>
+    <link rel="icon" href="./img/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
@@ -30,8 +32,8 @@
             <div class="nav">
                 <ul>
                     <a href="#">Ian Hernández Portfolio</a>
-                    <a href="#">Proyects</a>
                     <a href="#">Skills</a>
+                    <a href="#">Proyects</a>
                     <a href="<#">Contact Me</a>
                 </ul>
     
@@ -101,16 +103,6 @@
                 </div>
                 <div  data-aos="fade-up" class="target">
                     <div class="title">
-                        <h2>CVDP Página Web </h2>
-                        <img src="./img/cvdp.png" alt="">
-                    </div>
-                    <div class="info">
-                        <p>Proyecto IoT, página web conectada a base de datos que recibe información de sensores de pulsos electromagnéticos y GPS</p>
-                        <a href="https://queretarocvdp.my.canva.site/home">Ir a la página</a>
-                    </div>
-                </div>
-                <div  data-aos="fade-up" class="target">
-                    <div class="title">
                         <h2>Neolen | Hackaton Fintech 2024</h2>
                         <img src="./img/neolen.png" alt="">
                     </div>
@@ -119,30 +111,49 @@
                         <a href="https://www.figma.com/proto/oQif6WfnRU0ulOyfWL6xaW/Neolen?page-id=0%3A1&node-id=1-7&node-type=canvas&viewport=-892%2C390%2C0.86&t=Ey37ODpCPsUZYzwD-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A7&show-proto-sidebar=1">Prototipo Interfaz MVP</a>
                     </div>
                 </div>
+                <div  data-aos="fade-up" class="target">
+                    <div class="title">
+                        <h2>CVDP Página Web </h2>
+                        <img src="./img/cvdp.png" alt="">
+                    </div>
+                    <div class="info">
+                        <p>Proyecto IoT, página web conectada a base de datos que recibe información de sensores de pulsos electromagnéticos y GPS</p>
+                        <a href="https://queretarocvdp.my.canva.site/home">Ir a la página</a>
+                    </div>
+                </div>
             </div>
-            <div class="form-container">
-                <h2>EMAIL ME</h2>
-                <form id="emailForm">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
-                    </div>
-                  <button type="submit" onclick="sendEmail()">Enviar</button>
-                </form>
+            <div class="section-3">
+                <div class="form-container">
+                    <h2>CONTACT ME</h2>
+                    <form id="emailForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
+                        </div>
+                      <button type="submit" onclick="sendEmail()">Enviar</button>
+                    </form>
+                </div>
+                <div class="quote">
+                    <p>"Innovation distinguishes between a leader and a follower."</p>
+                    <p>- Steve Jobs</p>
+                </div>
             </div>
         </div>
+        <footer>
+            <p>&copy; 2025  <span> ian-hdzzz</span>  |  ALL RIGHTS RESERVED.</p>
+        </footer>
     </div>
 </body>
     <script src="script.js"></script>
