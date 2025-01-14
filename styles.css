@@ -51,11 +51,15 @@ body{
     width: 100%;
     padding: 30px 50px;
     color: var(--secundary-color);
+    flex-wrap: nowrap;
 }
+
 .nav > ul{
     display: flex;
+    justify-content: space-between;
     list-style: none;
     width: 100%;
+    flex-wrap: nowrap;
 }
 
 .nav ul a{
@@ -267,9 +271,13 @@ body{
 .target .info a {
     margin-bottom: 20px;
     transition: all ease .6s;
+    background: #35b4f4;
+    color: #fff;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 15px;
 }
 .target .info a:hover {
-    color: #35b4f4;
     font-size: 1.04em;
 }
 .section-3{
@@ -364,3 +372,73 @@ footer span {
     color: #c5c4c4;
     font-size: 14px;
 }
+
+@media screen and (max-width: 768px) {
+   .nav ul{
+    display: none;
+   }
+   .main{
+    font-size: 30px;
+    padding: 20px;
+   }
+   .section-2{
+    margin: 40% 0;
+   }
+   .target{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   }
+   .contenedor-targets .title {
+    width: 100%;
+    margin: 0 10px;
+   }
+
+   .target .title img{
+    margin: 40px 0;
+   
+   }
+   .target .info {
+    margin: 0 40px;
+    width: 100%;
+
+   }
+   .target .info p{
+    margin-bottom: 40px;
+    text-align: justify;
+   }
+   .target .info a {
+    position: relative;
+    bottom: 10px; 
+   }
+   
+   .section-3{
+    display: flex;
+    flex-direction: column;
+   }
+   .form-container{
+    width: 100%;
+    margin: auto;
+   }
+   .form-group{
+    width: 70%;
+   }
+   .form-container button{
+    width: 70%;
+   }
+   .quote{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   }
+   .quote p{
+    margin: 60px 0 0 40px;
+   }
+   footer{
+    margin: auto;
+    padding: 20px 0;
+   }
+  }
