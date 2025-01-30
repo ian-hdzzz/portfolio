@@ -400,7 +400,10 @@ footer span {
    .section-2{
     margin: 40% 0;
    }
+   
    .target{
+   
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -427,6 +430,7 @@ footer span {
     margin: auto 10px;
     text-align: justify;
     margin-bottom: 30px;
+    font-size: 18px;
    }
    
    .contenedor-targets .target .info a {
