@@ -232,13 +232,14 @@ body{
 .target{
     margin: 50px 0;
     color: #fff;
-    padding: 20px;
+    padding: 20px 10px;
     width: 70%;
     height: auto;
     background: #0D0D0D;
     border-radius: 20px; /* Hace el div circular */
     box-shadow: 0 0 30px rgba(32, 32, 32, 0.5); /* Brillo exterior */
     display: flex;
+    justify-content: space-around;
 }
 .target .title{
     display: flex;
@@ -246,39 +247,42 @@ body{
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin: 20px 0;
+    margin: 20px;
     width: 50%;
 }
 .target .info{
+    position: relative;
     width: auto;
-    margin: 80px 10px;
-   
+    margin:20px;
+    padding: 30px;
+
 }
-.target a{
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--colores-enlaces) ;
-}
+
 .target img{
-    margin: 20px;
+    margin: 40px 20px;
     width: 180px;
     height: auto;
     border-radius: 20px;
 }
-.target .info p{
-    margin-bottom: 20px;
 
+.target .info p{
+    margin: 40px 0;
+  
 }
+
 .target .info a {
-    position: relative;
-    bottom: -50px;
-    right: -200px;
+    text-align: center;
+    width: 18vw;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--colores-enlaces) ;
     transition: all ease .6s;
     background: #35b4f4;
     color: #fff;
     padding: 15px;
-    margin: 20px;
     border-radius: 12px;
+    right: 30px;
+    
 }
 .target .info a:hover {
    padding: 15.3px;
@@ -381,8 +385,14 @@ footer span {
     display: none;
    }
    .main{
-    font-size: 3vw; 
+    font-size: 5vw; 
     padding: 20px;
+   }
+   .section-1{
+    height: 100%;
+    background-size: cover;
+    background-position:  49%;
+    background-repeat: no-repeat;
    }
    .black{
     min-height: 82vh;
@@ -399,7 +409,7 @@ footer span {
    }
    .contenedor-targets .title {
     width: 100%;
-    margin: 0 10px;
+    margin: 15px 10px;
    }
 
    .target .title img{
@@ -407,18 +417,22 @@ footer span {
    
    }
    .target .info {
+    display: flex;
+    flex-direction: column;
     margin: 0 40px;
     width: 100%;
 
    }
    .target .info p{
-    margin-bottom: 40px;
+    margin: auto 10px;
     text-align: justify;
+    margin-bottom: 30px;
    }
-   .target .info a {
-
-    top: 0;
-    right: 0;
+   
+   .contenedor-targets .target .info a {
+    width: auto;
+    margin: 20px auto;
+   
    }
    
    .section-3{

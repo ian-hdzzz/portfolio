@@ -3,23 +3,17 @@ AOS.init({
     once: true // Se ejecuta solo una vez
 });
 
-let lastScrollY = 0; // Última posición del scroll
+let hasScrolled = false; // Bandera para verificar si el usuario ha hecho scroll
 
 window.addEventListener('scroll', () => {
     const indicator = document.querySelector('.scroll-indicator');
 
-    if (window.scrollY < lastScrollY) {
-        // Si el usuario está subiendo
-        indicator.style.opacity = '1';
-        indicator.style.visibility = 'visible';
-        indicator.style.animation = 'fade-in 0.5s forwards'; // Reaparece suavemente
-    } else {
-        // Si el usuario está bajando
+    if (!hasScrolled && window.scrollY > 50) { 
+        // Desaparece cuando el usuario baja
         indicator.style.opacity = '0';
         indicator.style.visibility = 'hidden';
+        hasScrolled = true; // Evita que vuelva a mostrarse
     }
-
-    lastScrollY = window.scrollY; // Actualiza la posición del scroll
 });
 
 document.getElementById('emailForm').addEventListener('submit',(e) => {
