@@ -270,19 +270,33 @@ body{
   
 }
 
-.target .info a {
+.contenedor-targets .target .info a {
     text-align: center;
-    width: 18vw;
+    width: 40%;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--colores-enlaces) ;
     transition: all ease .6s;
-    background: #35b4f4;
     color: #fff;
     padding: 15px;
     border-radius: 12px;
     right: 30px;
     
+}
+
+.info .uno{
+   background: #0055FF;
+   margin-right: 20px;
+}
+.info .uno:hover{
+    background: #07A4FF;
+    transform: scale(1.2); 
+ }
+.info .dos{
+    border: 1px solid #fff;
+}
+.info .dos:hover{
+    cursor: pointer;
 }
 .target .info a:hover {
    padding: 15.3px;
@@ -434,10 +448,11 @@ footer span {
    }
    
    .contenedor-targets .target .info a {
-    width: auto;
+    width: 50%;
     margin: 20px auto;
    
    }
+ 
    
    .section-3{
     display: flex;
